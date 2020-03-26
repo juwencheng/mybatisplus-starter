@@ -6,6 +6,8 @@ import com.example.mybatisplus1.api.service.BrokerMessageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务实现类
@@ -17,4 +19,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class BrokerMessageServiceImpl extends ServiceImpl<BrokerMessageMapper, BrokerMessageEntity> implements BrokerMessageService {
 
+    @Override
+    public List<BrokerMessageEntity> customQueryAllWithAnnotation() {
+        return this.baseMapper.customQueryAllWithAnnotation();
+    }
 }

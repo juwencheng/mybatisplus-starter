@@ -24,4 +24,12 @@ class Mybatisplus1ApplicationTests {
         }
     }
 
+    @Test
+    void testQueryAllWithAnnotation() {
+        List<BrokerMessageEntity> messageEntities = brokerMessageService.customQueryAllWithAnnotation();
+        for (BrokerMessageEntity entity: messageEntities) {
+            System.out.println(entity.getMessage());
+        }
+    }
+
 }

@@ -21,7 +21,7 @@ public class MyBatisPlusGenerator {
         System.out.println("####################################################");
         System.out.println("###欢迎使用MyBatis-Plus代码生成工具");
         System.out.println("###将此工具放到parent工程下的测试用例中运行");
-        System.out.println("###开始使用吧~~");
+        System.out.println("###⚠️⚠️⚠️⚠️生成文件会自动覆盖之前文件，请谨慎操作⚠️⚠️⚠️⚠️");
         System.out.println("####################################################");
     }
 
