@@ -35,6 +35,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!--mybatis plus 代码生成所需依赖-->
         <dependency>
             <groupId>com.baomidou</groupId>

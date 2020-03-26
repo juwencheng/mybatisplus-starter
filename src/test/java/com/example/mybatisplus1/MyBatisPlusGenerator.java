@@ -86,7 +86,8 @@ public class MyBatisPlusGenerator {
 
         // 数据源配置
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
-        dataSourceConfig.setUrl("jdbc:mysql://localhost:8889/brokermessage?useUnicode=true&useSSL=false&characterEncoding=utf8" +
+        dataSourceConfig.setUrl("jdbc:mysql://localhost:8889/broker_message?useUnicode=true&useSSL=false" +
+                "&characterEncoding=utf8" +
                 "&serverTimezone=Asia/Shanghai");
         dataSourceConfig.setDriverName("com.mysql.cj.jdbc.Driver");
         dataSourceConfig.setUsername("root");
