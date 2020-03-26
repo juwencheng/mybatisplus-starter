@@ -15,4 +15,5 @@ import java.util.List;
  */
 public interface BrokerMessageService extends IService<BrokerMessageEntity> {
     List<BrokerMessageEntity> customQueryAllWithAnnotation();
+    List<BrokerMessageEntity> customQueryAllWithXml();
 }

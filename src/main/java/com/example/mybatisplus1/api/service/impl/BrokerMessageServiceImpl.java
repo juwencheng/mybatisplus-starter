@@ -23,4 +23,9 @@ public class BrokerMessageServiceImpl extends ServiceImpl<BrokerMessageMapper, B
     public List<BrokerMessageEntity> customQueryAllWithAnnotation() {
         return this.baseMapper.customQueryAllWithAnnotation();
     }
+
+    @Override
+    public List<BrokerMessageEntity> customQueryAllWithXml() {
+        return this.baseMapper.customQueryAllWithXml();
+    }
 }

@@ -18,4 +18,6 @@ public interface BrokerMessageMapper extends BaseMapper<BrokerMessageEntity> {
 
     @Select("select * from broker_message")
     List<BrokerMessageEntity> customQueryAllWithAnnotation();
+
+    List<BrokerMessageEntity> customQueryAllWithXml();
 }

@@ -13,5 +13,9 @@
         <result column="create_time" property="createTime" />
         <result column="update_time" property="updateTime" />
     </resultMap>
+    <select id="customQueryAllWithXml"
+            resultType="com.example.mybatisplus1.api.dao.entity.BrokerMessageEntity">
+        select * from broker_message
+    </select>
 
 </mapper>

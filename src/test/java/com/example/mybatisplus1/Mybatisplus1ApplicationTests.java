@@ -31,5 +31,11 @@ class Mybatisplus1ApplicationTests {
             System.out.println(entity.getMessage());
         }
     }
-
+    @Test
+    void testQueryAllWithXml() {
+        List<BrokerMessageEntity> messageEntities = brokerMessageService.customQueryAllWithXml();
+        for (BrokerMessageEntity entity: messageEntities) {
+            System.out.println(entity.getMessage());
+        }
+    }
 }
